@@ -1,10 +1,14 @@
+const inputElement = document.getElementById('text-input');
+const resultElement = document.getElementById('result');
+const checkButton = document.getElementById('check-btn');
+
+
 function checkInput() {
-    const input = document.getElementById('text-input').value;
-    const resultElement = document.getElementById('result');
-    if (input.trim() === '') {
+    const inputValue = inputElement.value;
+    if (inputValue.trim() === '') {
         alert('Please input a value');
     } else {
-        resultElement.textContent = input + (isPalindrome(input) ? " is a palindrome" : " is not a palindrome");
+        resultElement.textContent = inputValue + (isPalindrome(inputValue) ? " is a palindrome" : " is not a palindrome");
         resultElement.style.color = 'green';
     }
 }
@@ -25,3 +29,5 @@ function clearStr(str) {
     const regex = /[^a-zA-Z0-9]/g;
     return str.toLowerCase().trim().replace(regex, '');
 }
+
+checkButton.addEventListener('click', checkInput);
