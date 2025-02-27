@@ -67,6 +67,9 @@ class CashRegister {
                 'TWENTY': 0,
                 'ONE HUNDRED': 0
             }
+            const cidBackup = cid.map(function (arr) {
+                return arr.slice();
+            });
             for (let i = cid.length - 1; i >= 0; i--) {
                 const unitName = cid[i][0];
                 const unitPennyValue = this.pennyPerUnit[unitName];
@@ -87,6 +90,7 @@ class CashRegister {
                 }
             }
             if (reminderPenny > 0) {
+                cid = cidBackup;
                 return "Status: INSUFFICIENT_FUNDS";
             }
         }
