@@ -27,10 +27,24 @@ h1 {
     color: #FFD700;
 }
 
+img {
+    width: 150px;
+    display: none;
+}
+
 .search-container {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+}
+
+.sprite-image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #search-input {
@@ -82,7 +96,7 @@ h1 {
 
 .types-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 10px;
     margin-bottom: 20px;
 }
