@@ -1,0 +1,76 @@
+
+.location-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+}
+
+.entry {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 500px;
+    height: 200px;
+    margin: 10px auto;
+    font-family: "Inter", sans-serif;
+}
+
+.location-header {
+    font-family: "Regular", sans-serif;
+    font-size: 0.7rem;
+}
+
+.entry-img {
+    height: 100%;
+    width: 30%;
+}
+
+.country {
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-right: 20px;
+    letter-spacing: 0.1rem;
+}
+
+.entry-info {
+    height: 100%;
+    width: 70%;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 10px;
+}
+
+.entry-info h2, .entry-info a {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.entry-info a:link, .entry-info a:visited {
+    color: #918E9B;
+}
+
+.entry-info a:hover {
+    color: gray;
+}
+
+.location-name {
+    font-size: 2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.travel-dates {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.entry-img img {
+    height: 100%;
+    width: auto;
+}
+
+.travel-description {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
