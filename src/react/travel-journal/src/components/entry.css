@@ -20,9 +20,16 @@
     font-size: 0.7rem;
 }
 
-.entry-img {
+.entry-img-container {
     height: 100%;
     width: 30%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.entry-img-container img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .country {
@@ -54,7 +61,9 @@
 }
 
 .location-name {
-    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-top: 0.2rem;
     margin-bottom: 0.8rem;
 }
