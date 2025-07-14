@@ -7,7 +7,8 @@ function App() {
         <>
             <Header/>
             {getData().map(item => (
-                <Entry entryImg={item.entryImg}
+                <Entry key={item.id}
+                       entryImg={item.entryImg}
                        entryImgAlt={item.entryImgAlt}
                        country={item.country}
                        locationName={item.locationName}
