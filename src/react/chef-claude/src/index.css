@@ -38,4 +38,54 @@ header {
     font-size: 1.5rem;
 }
 
+form {
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+}
+
+form input, form button {
+    font-family: "Inter", sans-serif;
+    height: 100%;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+}
+
+form input {
+    border: 1px solid #D1D5DE;
+    margin-right: 0.5rem;
+    flex-grow: 1;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 0 0.5rem;
+}
+
+form button {
+    font-weight: 500;
+    border: none;
+    background: #141413;
+    color: white;
+    padding: 0 1.5rem;
+    min-width: 150px;
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: 0 0 10px lightgray;
+}
+
+form button:active {
+    background: #141413C3;
+}
+
+form button::before {
+    content: "+";
+    margin-right: 0.2rem;
+    color: white;
+}
+
+
+
 
