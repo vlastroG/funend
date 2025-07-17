@@ -86,6 +86,22 @@ form button::before {
     color: white;
 }
 
+.ingredients-container {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.ingredients-container legend {
+    margin-bottom: 20px;
+}
+
+li {
+    color: #475467;
+    font-weight: 400;
+}
+
 
 
 
