@@ -5,16 +5,14 @@ import Ingredients from "./Ingredients.jsx";
 export default function Main() {
     const [ingredients, setIngredients] = useState([]);
 
-    function addIngredient(event) {
-        event.preventDefault();
-        const formData = new FormData(event.target);
+    function addIngredient(formData) {
         const newIngredient = formData.get("ingredient");
         setIngredients(ingredients => [...ingredients, newIngredient]);
     }
 
     return (
         <main>
-            <form onSubmit={addIngredient}>
+            <form action={addIngredient}>
                 <input type="text"
                        placeholder="e.g. oregano"
                        aria-label="Add ingredient"
